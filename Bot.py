@@ -5,7 +5,8 @@ import os
 import asyncio
 
 # ── إعدادات البوت ──────────────────────────────────────────────
-TOKEN = "MTQ5Nzg5MDI4NTMyODQwNDYwMQ.GDWOY2.Mx0BUVed3ptDKIdvNHwdmidfqyH2S9_Pc3eYBo"           # ضع توكن البوت هنا
+import os
+TOKEN = os.environ.get("TOKEN")
 PREFIX = ".v "                          # بادئة الأوامر
 SETUP_CHANNEL_NAME = "➕ إنشاء روم"     # اسم قناة الانضمام لإنشاء روم
 AFK_CHANNEL_NAME = "🚫 المطرودون"       # اسم قناة المطرودين
